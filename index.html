@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-formhelpers/css/bootstrap-formhelpers.min.css">
+    <link href="libs/bootstrap-form-helpers/css/bootstrap-formhelpers-countries.css" rel="stylesheet">
+    <link href="libs/bootstrap-form-helpers/css/bootstrap-formhelpers-currencies.flags.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/css/landing.css">
+
+    
+
+    <script src="libs/js/utils.js"></script>
+    <script src="libs/jquery/jquery-3.2.0.min.js"></script>
+    <script src="libs/bootstrap-form-helpers/js/bootstrap-formhelpers.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/bootstrap-formhelpers/js/bootstrap-formhelpers-selectbox.js"></script>
+    <script src="libs/bootstrap-formhelpers/js/lang/pt_BR/bootstrap-formhelpers-countries.pt_BR.js"></script>
+    <script src="libs/bootstrap-formhelpers/js/bootstrap-formhelpers-countries.js"></script>
+
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <meta name="description" content="Você está a poucos passos de otimizar suas campanhas e aumentar suas vendas!">
+    <meta property="og:description" content="Você está a poucos passos de otimizar suas campanhas e aumentar suas vendas!" />
+
+</head>
+<body class="try">
+<div class="wrap top top-upper">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <a href="index.html" ><img src="img/logo.svg" title="Voxus"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="container">
+        <div class="row try">
+            <div class="col-md-12">
+                <div class="try-title">
+                    <h1>Você está a poucos passos de otimizar suas campanhas!</h1>
+                    <p>Queremos conhecer mais sobre sua empresa para melhorar sua experiência com a Voxus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap try-form">
+    <div class="container">
+        <div class="row try">
+            <div class="col-md-12">
+                <div class="form-box">
+                    <div class="input-div">
+                        <input type="text" name="name" placeholder="Nome completo" />
+
+                        <div class="error_message text-right" style="display: none"></div>
+                    </div>
+                    
+
+                        
+                    <div class="input-div tel-field">
+                        <div class="tel-country  bfh-selectbox bfh-countries" data-country="BR" data-flags="true" data-available="US,AL,AG,AD,BR" data-blank="false" data-name="phone_code">
+                        <input type="hidden" value="">
+                        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+                          <span class="bfh-selectbox-option input-small" data-option=""></span>
+                          <b class="caret"></b>
+                        </a>
+                        <div class="bfh-selectbox-options">
+                          <input type="text" class="bfh-selectbox-filter">
+                          <div role="listbox">
+                          <ul role="option">
+                          </ul>
+                          </div>
+                        </div>
+                      </div>
+              
+                        <input type="text" name="phone" placeholder="Telefone"/>
+                        <div class="error_message text-right" style="display: none"></div>
+                    </div>
+                        
+                    <div class="input-div">
+                        <input type="text" name="email" placeholder="Endereço de e-mail" />
+                        <div class="error_message text-right" style="display: none"></div>
+                    </div>
+                        
+                    <div class="input-div">
+                        <input type="text" name="company" placeholder="Nome da empresa" />
+                        <div class="error_message text-right" style="display: none"></div>
+                    </div>
+                        
+                    <div class="input-div">
+                        <input type="text" name="site" placeholder="URL do site" />
+                        <div class="error_message text-right" style="display: none"></div>
+                    </div>
+
+                    <div class="dropdown show input-div">
+                        <div class="dropdown-select dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="input-text">
+                                <span class="fake-select-value">Verba mensal em mídia</span>
+                            </div>
+                            <span class="caret"></span>
+                        </div>
+                        
+                        <div class="error_message text-right" style="display: none"></div>
+                        <div class="dropdown-menu fake-select" style="left: 3%; width: 95%;" aria-labelledby="dropdownMenuLink">
+                            <ul>   
+                                <li class="fake-select-item" data-active="false"><= R$5.000</li>
+                                <li class="fake-select-item" data-active="false">>= R$5.001 e <= R$30.000</li>
+                                <li class="fake-select-item" data-active="false">>= R$30.001 e <= R$100.000</a></li>
+                                <li class="fake-select-item" data-active="false">>= R$100.001 e <= R$500.000</li>
+                                <li class="fake-select-item" data-active="false">>= R$ 500.001</li>
+                                <li class="fake-select-item" data-active="false">Não se aplica</li>
+                            </ul>
+                        </div>
+                    </div>
+                      
+                    <input class="fake-select-hidden" type="hidden" name="monthly_allowance" value="" />
+                    <input type="hidden" name="form-id" />
+                    <input type="hidden" name="ip" />
+                    <input type="hidden" name="hashid" value=""/>
+                    <input type="hidden" name="form" value="experimente" />
+
+                    <button type="button" class="button button-green" id="submit-form">Experimentar gratuitamente</button>
+                    <div class="contact-msg">Entraremos em contato em até 24hs úteis.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 box-terms-try"  >
+                <p style="display: none">*Para usar o trial grátis você precisa ser um e-commerce e concordar com os termos e requisitos de trial gratuito. Saiba mais em: <a href="#" data-toggle="modal" data-target="#termsModal" class="link-terms-try" >Termos e requisitos de trial gratuito</a></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+<hr class="footer-divider" />
+
+<div class="wrap footer">
+    <div class="container">
+
+        <div class="row">
+            <div class="footer-bar">
+                <div class="col-md-1">
+                    <div class="logo">
+                        <img src="img/logo_gray.svg" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="list">
+                        <ul>
+                            <li><a href="privacidade.html" title="">Termos de serviço</a></li>
+                            <li><a href="politica.html" title="">Política de privacidade</a></li>
+                            <li><a href="opcoes-anuncio.html" title="">Opções de anúncio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="termsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Termos e requistos de trial gratuito</h4>
+                <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-12 terms-text" id="terms-text">
+                        
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <br/>
+                            
+                            <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>7. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>8. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>9. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>10. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>11. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="libs/jquery-mask/jquery.mask.js"></script>
+<script>
+    
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+
+    
+$(document).ready(function (){
+
+    $('input[name="form-id"]').val(generateToken(15));
+
+    $('.dropdown-select').mouseover(function() {
+        $(this).find('.caret').css('color', 'var(--voxus)');
+    });
+
+    $('.dropdown-select').mouseout(function() {
+        $(this).find('.caret').css('color', '#333');
+    });
+
+    $('.fake-select-item').on('click', function() {
+        $('.dropdown-select .input-text').css('width', 'auto');
+        var lastActive = $('.fake-select-item[data-active="true"]');
+        lastActive.attr('data-active', 'false');
+        lastActive.removeClass('active-item');
+
+        $(this).attr('data-active', 'true');
+        $(this).addClass('active-item');
+        var data = $(this).text();
+
+        $('.fake-select-value').text(data);
+        $('.fake-select-hidden').val(data);
+    });
+
+    $('input[name="hashid"]').val($.now());
+
+    function sendInput (label, value){
+        var label = label;
+        var data = $('.form-box').find('input');
+          $.ajax({
+            type: 'POST',
+            url: "",
+            dataType: "json",
+            crossDomain: true,
+            data: data.serializeArray(),
+            success: function(data) {
+            
+            }
+        });
+    };
+
+
+    $('input').on('blur', function(){
+        if($(this).val() != ''){
+            sendInput($(this).attr('name'), $(this).val());
+
+            gtag('event', 'conversion', {'send_to': 'AW-953383462/SGgdCIr9u3wQpvTNxgM'});
+
+
+            $('body:not(:has(img[src=""]))').append('<img height="1" width="1" style="display:none;" alt="" src="" />');
+
+            if(typeof fbq != 'undefined') fbq('track', 'InitiateCheckout');
+
+        }
+    });
+
+    $(function() {
+        var terms = document.getElementById('terms-text');
+        Ps.initialize(terms, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+        
+    });
+
+
+
+    $('#termsModal').on('show.bs.modal',function(){
+        //Ps.update();
+        //$('#terms-text').css('overflow', 'hidden');
+    });
+    
+        var email = getParameterByName('e');
+        if (email != null) {
+            $('input[name=email]').val(email);
+
+            if(email != ''){
+                if(!isEmail(email)){
+                    $('input[name=email]').next('.error_message').show().text('Email inválido.');
+                }
+            
+                var data = $('.form-box').find('input');
+                $.ajax({
+                    type: 'POST',
+                    url: "",
+                    dataType: "json",
+                    crossDomain: true,
+                    data: data.serializeArray(),
+                    success: function(data) {
+                    
+                    }
+                });
+            }
+        }
+
+    
+         $('.bfh-selectbox').on('change.bfhselectbox', function () {
+            if($(this).val() != ''){
+                $('.bfh-selectbox .bfh-selectbox-toggle').css('color', '#2d3a40');
+            }else{
+                $('.bfh-selectbox .bfh-selectbox-toggle').css('color', 'rgba(45, 58, 64, 0.3)');
+            }
+        });
+
+         
+        $('input[name=email]').on('blur', function(){
+            $('.error_message').css('color', 'red').hide();
+            var email = $(this).val();
+
+            if(email != ''){
+                
+                $('.box-terms-try p').show();
+
+                if(!isEmail(email)){
+                    $('input[name=email]').next('.error_message').show().text('E-mail inválido.');
+                }else{
+                    if(email.includes('yahoo') || 
+                       email.includes('hotmail') || 
+                       email.includes('gmail') || 
+                       email.includes('outlook') || 
+                       email.includes('uol') || 
+                       email.includes('terra') || 
+                       email.includes('globo')){
+                            $('input[name=email]').next('.error_message').show().text('Insira um e-mail corporativo');
+                    }
+                }
+            }else{
+                $('.box-terms-try p').hide();
+            }
+        });
+
+
+        $('#submit-form').on('click', function(){
+            $('.error_message').css('color', 'red').hide();
+            
+            var emptyInput = $(".form-box").find('input:text').filter(function() { return $(this).val() == ""; });
+            if($('.form-box').find('.fake-select-hidden').val() == '') {
+                emptyInput.push($('.form-box').find('.dropdown-select'));
+            }
+
+            var email = $('input[name=email]').val();
+            var phone = $('input[name=phone]');
+            var site = $('input[name=site]').val();
+            
+            if(emptyInput.length == 0 ){
+                var rtn = true;
+
+                
+                if(!isEmail(email)){
+                    $('input[name=email]').next('.error_message').show().text('E-mail inválido.');
+                    rtn  = false;
+                }else{
+                     if(email.includes('yahoo') || 
+                       email.includes('hotmail') || 
+                       email.includes('gmail') || 
+                       email.includes('outlook') || 
+                       email.includes('uol') || 
+                       email.includes('terra') || 
+                       email.includes('globo')){
+                            $('input[name=email]').next('.error_message').show().text('Insira um e-mail corporativo');
+
+                        rtn = false;
+                    }
+                }
+
+                if(!isPhone(phone)){
+                    $('input[name=phone]').next('.error_message').show().text('Telefone inválido.');
+                    rtn  = false;
+                }
+
+                if(!isValidSite(site)){
+                    $('input[name=site]').next('.error_message').show().text('Dominío inválido.');
+                    rtn  = false;
+                }
+
+                if(rtn){
+            if (typeof fbq != 'undefined'){
+                    fbq('track', 'Lead');
+            }
+
+                    $('body').append('<img height="1" width="1" style="display:none;" alt=/>');
+
+                    gtag('event', 'conversion', {'send_to': 'AW-953383462/xaWBCP2Yt3wQpvTNxgM'});
+                    
+                    $(this).fadeOut(50, function(){
+                        $(this).text('Obrigado!').addClass('button-white').fadeIn(550).prop('disabled', true);
+                        $('.contact-msg').show();
+                    });
+
+                    var form = $(this).parent();
+                    var data = $('.form-box').find('input');
+
+                    $.ajax({
+                         type: 'POST',
+                         url: "",
+                         dataType: "json",
+                         crossDomain: true,
+                         data: data.serializeArray(),
+                         success: function(data) {
+                           
+                         }
+                     });
+
+                    sendInput('complete', 1);
+                }
+
+            }else{
+                
+
+                if( $('input[name=phone]').val() != '') {
+                     isPhone($('input[name=phone]'));
+                }
+
+                if(email != ''){
+                    if(!isEmail(email)){
+                        $('input[name=email]').next('.error_message').show().text('E-mail inválido.');
+                    }else{
+                        if(email.includes('yahoo') || 
+                           email.includes('hotmail') || 
+                           email.includes('gmail') || 
+                           email.includes('outlook') || 
+                           email.includes('uol') || 
+                           email.includes('terra') || 
+                           email.includes('globo')){
+                                $('input[name=email]').next('.error_message').show().text('Insira um e-mail corporativo');
+                        }
+                    }
+                }
+
+                if(site != ''){
+                    if(!isValidSite(site)){
+                        $('input[name=site]').next('.error_message').show().text('Dominío inválido.');
+                    }else{
+                        
+                    }
+                }
+                
+                emptyInput.each(function(i){
+                    if($(this).val() == ''){
+                        $(this).siblings('.error_message').show().text('Este campo é obrigatório!');
+                    }
+                });
+
+            }
+        });
+   
+
+        $('input[name=phone]').on('keyup', function(){
+            var element = $(this);
+
+            //element.unmask();
+            element.mask("(99) 99999-9999");
+            
+        });
+
+        $('input[name=phone]').on('blur', function(){
+            isPhone($(this));
+        });
+
+        $('input[name=site]').on('blur', function(){
+            var site = $(this).val();
+
+            if(site != ''){
+               if(isValidSite(site)){
+                    $('input[name=site]').next('.error_message').hide()
+               }else{
+                    $('input[name=site]').next('.error_message').show().text('Dominío inválido.');
+               }
+            }
+        });
+
+
+        $('input').focusin(function(){
+            
+            var label = $(this).attr('placeholder');
+
+            if(label != ''){
+                $(this).attr('placeholder', '');
+                $(this).before('<label class="label-input">'+label+'</label>');
+            }
+
+        });
+
+        $('input').focusout(function(){
+            var label  = $(this).prev('label').text();
+            if($(this).val() != ''){
+
+            }else{
+                $(this).attr('placeholder', label);
+                $(this).prev('label').remove();
+            }
+            
+        });
+
+    });
+
+    function isPhone(element){
+
+         var phone = element.val();
+
+         if(phone != ''){
+            element.next('.error_message').hide();
+
+            if(phone.length == 14) {    
+                element.mask("(99) 9999-9999");
+                return true;
+            } else if(phone.length == 15) {    
+                element.mask("(99) 99999-9999");
+                return true;
+            }else{
+                $('input[name=phone]').next('.error_message').show().text('Telefone inválido.');
+                return false;
+            }
+        }
+    }
+
+    function isEmail(email) {
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (filter.test(email)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    function isValidSite(site){
+        site = site.replace('https://').replace('http://');
+        var pattern = /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/;
+          if(!pattern.test(site)){
+          
+            return false;
+          } else {
+            
+            return true;
+          }
+    }
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109602830-2');
+</script>
+</body>
+</html>
